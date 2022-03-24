@@ -3,4 +3,7 @@ library(blogdown) # load blogdown
 new_site(theme = "wowchemy/starter-academic")
 file.edit("gitignore")
 blogdown::check_site()
-navigateconfig/_default/config.yaml
+install.packages("rstudioapi")
+library(rstudioapi) # to easily navigate to files
+rstudioapi::navigateToFile("config.yaml")
+blogdown::check_site()
