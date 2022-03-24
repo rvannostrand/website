@@ -5,8 +5,6 @@ weight: 10
 title: Hugo Academic Theme
 hero_media: hero-academic.png
 
-active:false
-
 cta:
   label: '**Get Started**'
   url: https://wowchemy.com/hugo-themes/

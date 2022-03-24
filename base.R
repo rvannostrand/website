@@ -7,3 +7,13 @@ install.packages("rstudioapi")
 library(rstudioapi) # to easily navigate to files
 rstudioapi::navigateToFile("config.yaml")
 blogdown::check_site()
+rmarkdown::render("content/post/2020-12-01-r-rmarkdown/index.en.Rmd")
+file.remove(c(
+  "content/post/2020-12-01-r-rmarkdown/index.en.html"
+))
+blogdown::edit_draft(c(
+  "content/privacy.md",
+  "content/terms.md"
+))
+
+blogdown::edit_draft("content/privacy.md")
