@@ -17,3 +17,5 @@ blogdown::edit_draft(c(
 ))
 
 blogdown::edit_draft("content/privacy.md")
+blogdown::build_site(build_rmd = 'content/post/2020-12-01-r-rmarkdown/index.en.Rmd')
+
